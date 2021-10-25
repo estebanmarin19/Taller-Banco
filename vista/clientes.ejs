@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/actclientes.js"></script>
+<script src="./js/eliclientes.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Clientes</title>
+</head>
+<body>
+  <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vempleados">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+    <form action="/frminsertarcli" method="POST" class="form-register animated fadeInDown">
+        <h1>Formulario Registro Clientes</h1>
+        <input class="forprincipal" type="text" name="doccli" placeholder="Documento" autofocus>
+        <input class="forprincipal" type="text" name="nomcli" placeholder="Nombre" autofocus>
+        <input class="forprincipal" type="text" name="apecli" placeholder="Apellido" autofocus>
+        <input class="forprincipal" type="text" name="correocli" placeholder="Correo" autofocus>
+        <input class="forprincipal" type="text" name="celulra" placeholder="Celular" autofocus>
+        <input class="forprincipal" type="text" name="sexo" placeholder="Sexo">
+        <input class="forprincipal" type="date"name="fechanaccli" placeholder="Nacimiento">
+        <button class="botons" type="submit">Registrar</button>
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        
+    </form>
+  <br>
+  <br>
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Documento</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Celular</th>
+            <th>Sexo</th>
+            <th>Nacimiento</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.doccli%>" name="doccli" id="doc" class="doc" ></td>
+        <td><input type="text" value="<%=datos.nomcli%>" name="nomcli" id="nom" class="nom"></td>
+        <td><input type="text" value="<%=datos.apecli%>" name="apecli" id="ape" class="ape"></td>
+        <td><input type="text" value="<%=datos.correocli%>" name="correocli" id="corr" class="corr"></td>
+        <td><input type="text" value="<%=datos.celulra%>" name="celulra" id="cel" class="cel"></td>
+        <td><input type="text" value="<%=datos.sexo%>" name="sexo" id="sex" class="sex"></td>
+        <td><input type="text" value="<%=datos.fechanaccli%>" name="fechanaccli" id="fec" class="fec"></td>
+        <td><input type="submit" value="Actualizar" id="btnact" class="btnact"></td>
+        <td><input type="submit" value="Eliminar" id="btneli" class="btneli"></td>
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VISTA EMPLEADOS </title>
+    <link rel="shortcut icon" href="img/iconop.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/vistaempleados.css">
+    <link href = "https: //fonts.googleapis.com/css2? family = Kaisei + Decol & display = swap "rel =" stylesheet ">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="clientes">Clientes</a></li>
+                <li><a href="lineascreditos">Lineas de Credito</a></li>
+                <li><a href="creditos">Creditos</a></li>
+                <li><a href="cuentas">Cuentas</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+    </header>
+
+    <section class="sectitulo">
+        <h1> Vista Empleados</h1>
+    </section>
+    <section class="tilnom">
+        <h3>Bienvenid@</h3>
+        <% datos.forEach(function (datos){ %>
+            
+      
+        <%=datos.nomcli%>
+        <%=datos.apecli%>
+        <%})%>
+    </section>
+    
+    
+</body>
+
+</html>

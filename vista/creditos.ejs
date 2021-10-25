@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/actcreditos.js"></script>
+  <script src="./js/elicreditos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Creditos</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vempleados">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+    <form action="/frminsertarcre" method="POST" class="form-register animated fadeInDown">
+        <h1>Formulario Registro Creditos</h1>
+       
+
+        <input class="forprincipal" type="text" name="codigocredito" placeholder="Codigo Credito" autofocus>
+        <input class="forprincipal" type="text" name="doccli" placeholder="Documento Cliente" autofocus>
+        <input class="forprincipal" type="text" name="codlinea" placeholder="Codigo Linea" autofocus>
+        <input class="forprincipal" type="number" name="montoprestamo" placeholder="Monto Prestamo" autofocus>
+        <input class="forprincipal" type="date" name="fechaaprobada" placeholder="Fecha Aprobado">
+        <input class="forprincipal" type="number"name="plazo" placeholder="Plazo">
+        <button class="botons" type="submit">Registrar</button>
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        
+    </form>
+  <br>
+  <br>
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Codigo Credito</th>
+            <th>Documento Cliente</th>
+            <th>Codigo Linea</th>
+            <th>Monto Prestamo</th>
+            <th>Fecha Aprobado</th>
+            <th>Plazo</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.codigocredito%>" name="codigocredito" id="cod" class="cod" ></td>
+        <td><input type="text" value="<%=datos.doccli%>" name="doccli" id="doc" class="doc"></td>
+        <td><input type="text" value="<%=datos.codlinea%>" name="codlinea" id="codl" class="codl"></td>
+        <td><input type="text" value="<%=datos.montoprestamo%>" name="montoprestamo" id="mon" class="mon"></td>
+        <td><input type="text" value="<%=datos.fechaaprobada%>" name="fechaaprobada" id="fec" class="fec"></td>
+        <td><input type="text" value="<%=datos.plazo%>" name="plazo" id="pla" class="pla"></td>
+        <td><input type="submit" value="Actualizar" id="btnact" class="btnact"></td>
+        <td><input type="submit" value="Eliminar" id="btneli" class="btneli"></td>
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

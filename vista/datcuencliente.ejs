@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/consignar.js"></script>
+  <script src="./js/retirar.js"></script>
+  <script src="./js/transferir.js"></script>
+  <script src="./js/recibir.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Cuentas</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vclientes">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+<h1>MIS CUENTAS</h1>
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Codigo Cuenta</th>
+            <th>Documento Cliente</th>
+            <th>Tipo de Cuenta</th>
+            <th>Saldo</th>
+            <th>Consignaciones</th>
+            <th>Retirar</th>
+            <th>Transferencias</th>
+            <th>Recibir</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.codcuenta%>" name="codcuenta" id="cod" class="cod" ></td>
+        <td><input type="text" value="<%=datos.doccli%>" name="doccli" id="doc" class="doc"></td>
+        <td><input type="text" value="<%=datos.tipocuenta%>" name="tipocuenta" id="tipo" class="tipo"></td>
+        <td><input type="text" value="<%=datos.saldo%>" name="saldo" id="sal" class="sal"></td>
+        <input type="hidden" value="<%=datos.transferencia%>" name="transferencia" id="tra" class="tra">
+        
+        
+        <td><input type="submit" value="Consignar" id="btnactcon" class="btnactcon"></td>
+        <td><input type="submit" value="Retirar" id="btnelicon" class="btnelicon"></td>
+        <td><input type="submit" value="Transferir" id="btnelicon1" class="btnelicon1"></td>
+        <td><input type="submit" value="Recibir" id="btnactcon2" class="btnactcon2"></td>
+
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!--<script src="./js/actualizar.js"></script>
+  <script src="./js/eliminar.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Creditos</title>
+</head>
+<body>
+    <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vclientes">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+    <h1>CREDITOS</h1>
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Codigo Credito</th>
+            <th>Documento Cliente</th>
+            <th>Codigo Linea</th>
+            <th>Monto Prestamo</th>
+            <th>Fecha Aprobado</th>
+            <th>Plazo</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.codigocredito%>" name="codigocredito" id="doc" class="doc" ></td>
+        <td><input type="text" value="<%=datos.doccli%>" name="doccli" id="usu" class="usu"></td>
+        <td><input type="text" value="<%=datos.codlinea%>" name="codlinea" id="cla" class="cla"></td>
+        <td><input type="text" value="<%=datos.montoprestamo%>" name="montoprestamo" id="rol" class="rol"></td>
+        <td><input type="text" value="<%=datos.fechaaprobada%>" name="fechaaprobada" id="est" class="est"></td>
+        <td><input type="text" value="<%=datos.plazo%>" name="plazo" id="img" class="img"></td>
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

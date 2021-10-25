@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="./css/estiloregistro.css">
+  <title>Clientes</title>
+</head>
+<body>
+  <header class="header2">
+        
+        <nav class="menu2">
+            <ul>
+                <li><a href="vadministrador">Inicio</a></li>
+                <li><a href="cerrar">Cerrar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        
+    </div>
+    
+  </header>
+  <h1>DATOS CLIENTES</h1>
+    
+<form action="" name="frm" id="frm">
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Documento</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Celular</th>
+            <th>Sexo</th>
+            <th>Nacimiento</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        <td><input type="text" value="<%=datos.doccli%>" name="doccli" id="doc" class="doc" ></td>
+        <td><input type="text" value="<%=datos.nomcli%>" name="nomcli" id="nom" class="nom"></td>
+        <td><input type="text" value="<%=datos.apecli%>" name="apecli" id="ape" class="ape"></td>
+        <td><input type="text" value="<%=datos.correocli%>" name="correocli" id="corr" class="corr"></td>
+        <td><input type="text" value="<%=datos.celulra%>" name="celulra" id="cel" class="cel"></td>
+        <td><input type="text" value="<%=datos.sexo%>" name="sexo" id="sex" class="sex"></td>
+        <td><input type="text" value="<%=datos.fechanaccli%>" name="fechanaccli" id="fec" class="fec"></td>
+        
+    </tr>
+        <%})%>
+    </tbody>
+    </table>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="./css/estiloempleado.css">
+  <title>Formulario Empleado</title>
+</head>
+<body>
+    <form action="/frminsertar" method="POST" class="form-register animated fadeInDown">
+        <h1>Formulario Empleado</h1>
+        <input class="form" type="text" name="doccli" placeholder="Documento" autofocus>
+        <input class="form" type="text" name="momcli" placeholder="Nombre" autofocus>
+        <input class="form" type="text" name="apecli" placeholder="Apellido">
+        <input class="form" type="text" name="correocli" placeholder="Correo">
+        <input class="form" type="number" name="celulra" placeholder="Telefono">
+        <input class="form" type="text" name="sexo" placeholder="Direccion">
+        <button class="botons" type="submit">Registrarse</button>
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    
+    </form>
+  <!--<br>
+  <br>
+  <table > 
+    
+    <thead>
+        
+        <tr>
+            
+            <th>Documento</th>
+                    <th>Usuario</th>
+                    <th>Clave</th>
+                    <th>Rol</th>
+                    <th>Estado</th>
+                    <th>Imagen</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% datos.forEach(function (datos){ %>
+    <tr>
+        
+        <td> <%=datos.doccli%></td>
+        <td><%=datos.nomusu%></td>
+        <td><%=datos.clave%></td>
+        <td><%=datos.rol%></td>
+        <td><%=datos.estado%></td>
+        <td><%=datos.imagen%></td>
+        <td><input type="button" value="Actualizar" name="btnact" id="btnact" class="btnact"></td>
+        <td><input type="button" value="Eliminar" name="btneli" id="btneli" class="btneli"></td>
+    </tr>
+    <%})%>
+</tbody>
+</table>-->
+
+
+</body>
+</html>
+
