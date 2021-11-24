@@ -7,6 +7,7 @@
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/actualizar.js"></script>
   <script src="./js/eliminar.js"></script>
+  <script src="./js/INSERTAR.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   
   <link rel="stylesheet" href="./css/estiloregistro.css">
@@ -26,15 +27,16 @@
     </div>
     
   </header>
-    <form action="/frminsertar" method="POST" class="form-register animated fadeInDown">
+    <form class="form-register animated fadeInDown">
         <h1>Formulario Registro Usuarios</h1>
-        <input class="forprincipal" type="text" name="doccli" placeholder="Documento" autofocus>
-        <input class="forprincipal" type="text" name="nomusu" placeholder="Usuario" autofocus>
-        <input class="forprincipal" type="password" name="clave" placeholder="Clave" autofocus>
-        <input class="forprincipal" type="text" name="rol" placeholder="Rol" autofocus>
-        <input class="forprincipal" type="text" name="estado" placeholder="Estado">
-        <input class="forprincipal" type="text"name="imagen" placeholder="Imagen">
+        <input class="forprincipal1" type="text" name="doccli" placeholder="Documento" autofocus>
+        <input class="forprincipal2" type="text" name="nomusu" placeholder="Usuario" autofocus>
+        <input class="forprincipal3" type="password" name="clave" placeholder="Clave" autofocus>
+        <input class="forprincipal4" type="text" name="rol" placeholder="Rol" autofocus>
+        <input class="forprincipal5" type="text" name="estado" placeholder="Estado">
+        <input class="forprincipal6" type="text"name="imagen" placeholder="Imagen">
         <button class="botons" type="submit">Registrarse</button>
+        <button type="button" id="btnact1" class="btnact1">Insertar</button>
         <p><a href="#">¿Ya tengo Cuenta?</a></p>
         
     </form>

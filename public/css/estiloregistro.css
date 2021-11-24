@@ -39,6 +39,45 @@ body {
   border-radius: 10px; 
 
 }
+.forprincipal1{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  border-radius: 10px; 
+
+}
+.forprincipal2{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  border-radius: 10px; 
+
+}
+.forprincipal3{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  border-radius: 10px; 
+
+}
 .doc {
   width: 100%;
   background: #24303c;
@@ -51,6 +90,45 @@ body {
   color: white;
   border-radius: 10px;   
   
+}
+.forprincipal4{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  border-radius: 10px; 
+
+}
+.forprincipal5{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  border-radius: 10px; 
+
+}
+.forprincipal6{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  border-radius: 10px; 
+
 }
 .usu {
   width: 100%;
@@ -143,6 +221,18 @@ body {
     
      
 }
+.form-register .btnact1 {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+    
+     
+}
+
 h1{
   text-align: center;
 

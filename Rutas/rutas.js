@@ -8,6 +8,7 @@ rutas.post('/login',controller.login)//Atrapar metodo control login
 rutas.get('/registrarse',controller.consultageneral);//Llamar a la funcion consulta general
 rutas.post('/frminsertar',controller.insertar);//Informacion de tipo post, conectarse con el formulario, llamar la funcion insertar
 
+rutas.post('/INSERTAR',controller.insertarconajax);
 rutas.post('/actualizar',controller.actualizar);
 rutas.post('/eliminar',controller.eliminar);
 rutas.get('/cerrar',controller.cerrar);

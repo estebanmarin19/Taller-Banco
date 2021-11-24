@@ -144,8 +144,35 @@ controller.login=async(req,res,next)=>{
  });
 
 
-}
 
+}
+controller.insertarconajax=async(req,res,next)=>{
+    const docx1=req.body.dd4;
+    const usux1=req.body.uu4;
+    const clax1=req.body.cc4;
+    const rolx1=req.body.rr4;
+    const estx1=req.body.ee4;
+    const imgx1=req.body.ii4;
+    const password=await bcryptjs.hash(clax1,8)
+   
+    cnn.query('INSERT INTO usuarios SET?',{doccli:docx1,nomusu:usux1,clave:password,rol:rolx1,estado:estx1,imagen:imgx1},(err,resbd)=>{
+    
+        if(err){
+             next(new Error(err));
+         }
+         else{
+             //console.log(resbd);
+    
+             //res.render('index',{datos:respbd})
+             res.redirect('/');
+         }
+     
+     
+    });
+    
+    
+}
+    
 
 controller.actualizar=async(req,res,next)=>{
 const docx=req.body.dd;
